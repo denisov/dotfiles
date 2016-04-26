@@ -1,0 +1,8 @@
+[core]
+	editor = vim
+
+[alias]
+        tree = log --graph --decorate --pretty=oneline --abbrev-commit --all
+[user]
+	email = elgato.andrey@gmail.com
+	name = Andrey Denisov

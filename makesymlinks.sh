@@ -1,8 +1,15 @@
 #!/bin/bash
+#
+# Скрпит заменяет файлы конфигов на симлинки на файлы в dotfiles
+# Применяется для настройки новой системы на сохранённые конфиги
+#
+# Добавить файл в dotfiles
+#    cp tc2/2.cfg --parents dotfiles/
+#    добавить в files
 
 dir=~/dotfiles
 olddir=~/dotfiles_old
-files=".zshrc"
+files=".zshrc .config/terminator/config .gitconfig"
 
 
 # create dotfiles_old in homedir
@@ -15,10 +22,12 @@ echo -n "Changing to the $dir directory ..."
 cd $dir
 echo "done"
 
+cd ~
 # move any existing dotfiles in homedir to dotfiles_old directory, then create symlinks from the homedir to any files in the ~/dotfiles directory specified in $files
 for file in $files; do
     echo "Moving existing $file from ~ to $olddir"
-    mv ~/$file ~/dotfiles_old/
+    cp $file --parents $olddir
+    unlink $file
     echo "Creating symlink to $file in home directory."
     ln -s $dir/$file ~/$file
 done
