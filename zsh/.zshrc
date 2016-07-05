@@ -56,13 +56,14 @@ source $ZSH/oh-my-zsh.sh
 
 # User configuration
 
-export PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games"
+export PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/home/andrey/mongo/bin"
 
 #export GOROOT=/usr/lib/go
 #export GOPATH=$HOME/go
 export PATH=$PATH:/usr/local/go/bin:/home/andrey/go/bin
 export GOPATH=$HOME/go
 
+alias m="/home/andrey/snippets/mongoenv.sh"
 
 alias vs='/srv/www/vs/www'
 

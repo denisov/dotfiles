@@ -1,4 +1,6 @@
 [global_config]
+  enabled_plugins = ActivityWatch, LaunchpadCodeURLHandler, APTURLHandler, LaunchpadBugURLHandler
+  suppress_multiple_term_dialog = True
 [keybindings]
 [layouts]
   [[default]]
