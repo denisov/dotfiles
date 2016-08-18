@@ -3,6 +3,7 @@
 
 [alias]
         tree = log --graph --decorate --pretty=oneline --abbrev-commit --all
+        t2 = log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold cyan)%aD%C(reset) %C(dim white)(%an)%C(reset)%C(auto)%d%C(reset)%n''%C(white)%B%C(reset) %C(dim white)%C(reset)' --all
 [user]
 	email = elgato.andrey@gmail.com
 	name = Andrey Denisov
