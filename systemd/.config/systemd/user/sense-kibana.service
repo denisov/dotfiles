@@ -1,0 +1,10 @@
+[Unit]
+Description=Kibana with sense
+After=network.target
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/stdbuf -oL /home/andrey/kibana/kibana-4.6.2-linux-x86_64/bin/kibana
+
+[Install]
+WantedBy=default.target
