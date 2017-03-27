@@ -62,6 +62,7 @@ export PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/g
 #export GOPATH=$HOME/go
 export PATH=$PATH:/usr/local/go/bin:/home/andrey/go/bin
 export GOPATH=$HOME/go
+:
 
 alias m="/home/andrey/snippets/mongoenv.sh"
 
