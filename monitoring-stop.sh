@@ -1,0 +1,1 @@
+systemctl stop influxdb.service telegraf grafana-server.service

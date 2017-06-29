@@ -11,36 +11,6 @@
     [[[window0]]]
       parent = ""
       type = Window
-  [[abc]]
-    [[[child0]]]
-      fullscreen = False
-      last_active_term = 5af70fb7-ddf9-48d7-b2d5-e02b4bbc4985
-      last_active_window = True
-      maximised = False
-      order = 0
-      parent = ""
-      position = 151:362
-      size = 657, 603
-      title = andrey@andrcomp: ~
-      type = Window
-    [[[child1]]]
-      order = 0
-      parent = child0
-      position = 327
-      ratio = 0.5
-      type = HPaned
-    [[[terminal2]]]
-      order = 0
-      parent = child1
-      profile = default
-      type = Terminal
-      uuid = 125755a1-27f6-43a6-80d5-2df9f31bb9e2
-    [[[terminal3]]]
-      order = 1
-      parent = child1
-      profile = default
-      type = Terminal
-      uuid = 5af70fb7-ddf9-48d7-b2d5-e02b4bbc4985
   [[vk_uploader]]
     [[[child0]]]
       fullscreen = False
@@ -51,7 +21,7 @@
       parent = ""
       position = 1469:25
       size = 449, 1023
-      title = node_modules/.bin/webpack --watch
+      title = webpack watch
       type = Window
     [[[child1]]]
       order = 0
@@ -60,14 +30,14 @@
       ratio = 0.489247311828
       type = VPaned
     [[[terminal2]]]
-      command = (cd ~/projects/vk_upload; node_modules/.bin/webpack --watch)
+      command = (cd ~/projects/vk-uploader; node_modules/.bin/webpack --watch)
       order = 0
       parent = child1
       profile = default
       type = Terminal
       uuid = d587cf9c-675b-46bc-a5a7-2067857b93f6
     [[[terminal3]]]
-      command = (cd ~/projects/vk_upload; zsh)
+      command = (cd ~/projects/vk-uploader; zsh)
       order = 1
       parent = child1
       profile = default

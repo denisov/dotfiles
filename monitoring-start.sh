@@ -1,0 +1,1 @@
+systemctl start influxdb.service telegraf grafana-server.service
