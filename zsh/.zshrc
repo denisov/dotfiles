@@ -65,10 +65,10 @@ export GOPATH=$HOME/go
 :
 
 alias m="/home/andrey/snippets/mongoenv.sh"
-
 alias vs='/srv/www/vs/www'
+alias n1-cli="ssh ngs.ru.andr.d /data/projects/n1.ru/scripts/cli.php"
 
-exec 2>>( while read X; do print "\e[91m${X}\e[0m" > /dev/tty; done & )
+# exec 2>>( while read X; do print "\e[91m${X}\e[0m" > /dev/tty; done & )
 
 # export MANPATH="/usr/local/man:$MANPATH"
 

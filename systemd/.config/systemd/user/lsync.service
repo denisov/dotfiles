@@ -1,0 +1,12 @@
+[Unit]
+Description=Lsync
+After=network.target
+
+[Service]
+Restart=always
+Type=simple
+ExecStart=/usr/bin/stdbuf -oL lsyncd lsyncd/lsyncd.conf.lua
+
+
+[Install]
+WantedBy=default.target
