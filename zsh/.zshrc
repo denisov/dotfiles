@@ -50,7 +50,7 @@ ZSH_THEME="gallois"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git httpie docker composer zsh-syntax-highlighting)
+plugins=(git docker composer zsh-syntax-highlighting)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -62,11 +62,11 @@ export PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/g
 #export GOPATH=$HOME/go
 export PATH=$PATH:/usr/local/go/bin:/home/andrey/go/bin
 export GOPATH=$HOME/go
-:
 
-alias m="/home/andrey/snippets/mongoenv.sh"
-alias vs='/srv/www/vs/www'
-alias n1-cli="ssh ngs.ru.andr.d /data/projects/n1.ru/scripts/cli.php"
+
+# alias m="/home/andrey/snippets/mongoenv.sh"
+# alias vs='/srv/www/vs/www'
+alias n1-cli="ssh ngs.ru.d.n1 /data/projects/n1.ru/scripts/cli.php"
 
 # exec 2>>( while read X; do print "\e[91m${X}\e[0m" > /dev/tty; done & )
 
